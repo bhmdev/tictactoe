@@ -1,7 +1,6 @@
 # Application Title: A Description
 
-This application allows the user to do x, y, and z. Maybe here's a reason why I wanted to do this project, or
-came up with this idea.
+This application allows a person to play tic tac toe.
 
 ## Important Links
 
@@ -10,17 +9,40 @@ came up with this idea.
 - [Deployed Client](www.link.com)
 
 ## Planning Story
+// Landing/login page to have Tic Tac Toe as a string, as well as a form/interactive buttons to signup and login. There will be form-fields to type in your email/username and password
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id ornare magna. Curabitur leo arcu, elementum in posuere vitae, rutrum eu urna. Quisque tincidunt nulla sed mi cursus, nec tristique est fermentum. Etiam lacinia id neque ut egestas. Sed consequat convallis felis nec posuere. Sed non eros sed velit viverra tincidunt. Etiam et tortor sit amet lacus volutpat dignissim. Vestibulum convallis, felis a posuere pretium, turpis enim sollicitudin neque, pretium finibus leo metus sed sapien. Praesent iaculis pharetra nunc ac rhoncus. Duis eu risus in est porttitor egestas sit amet eget metus. Maecenas iaculis auctor ullamcorper. Donec pretium dolor non nisl egestas bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper pulvinar orci interdum mattis. Ut gravida volutpat mauris, a semper risus maximus ut.
+// On the gameplay page will have the tic tac toe playing field made with basic CSS, specifically with the use of borders
+
+// On the top left corner of the page, there will be a button that changes color to denote who’s turn it is, X or O. Plan on using Bootstrap for these buttons/as well as a command that will change the after a move has been set.
+
+// In the top right corner there will be logout and reset buttons to allow a player to logout of their current game or give them the option to reset the game.
+
+// Below the game board I will have a New game button to start a fresh game. Above that is where users will get their feedback (if they’ve stated a new game after reset, this will also “Welcome” the user upon login/stating a new game etc etc.
+
+// The stats screen will just denote the total wins and losses and ties for a user. This will be made with module or just boxes. The “reset” button on this page will reset the scores.
+
+// The change password screen will have the logout button in the top right again. Additionally, it will have a form-field for a username and a new password. Once those fields are complete, the user will hit the change password button. Then that event will take place/bring the user back to the initial login screen.
+
+// One of the 8 winner scenarios will just denote text at the bottom stating the player has won. There will be a button to logout and one to reset to the home screen.
 
 ### User Stories
 
-- As a user I want to sign in/up
-- As a user I want to Create a new < resource >
-- As a user I want to Read multiple < resources >
-- As a user I want to Read a single < resource >
-- As a user I want to Update a < resource > I own
-- As a user I want to Delete a < resource > I own
+Authentication
+
+As a user I want to be able to login as needed
+As a user I would want to have the option to change my password as needed
+As a user I want to be able to sign-out of my account so I can keep people away from my scores
+As a user I want to be able to sign up with my email address to create a login/password format from the readings).
+
+Game Play
+
+As a user I would like to start and reset the game as needed.
+As a user I want to see who’s turn it is so that I can play the game properly
+As a user I do not want to be able to steal another users spot
+As a user I would like to know if I’ve won or lost by some indicator
+As a user I would like to have a simple tic tac toe game to play
+As a user I want to be able to play another game right when one is finished
+As a user once the game is over, I should not be able to keep playing
 
 ### Technologies Used
 
