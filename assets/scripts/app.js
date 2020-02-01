@@ -8,7 +8,10 @@
 
 $(() => {
   let currentPlayer = 'X'
-  const board = [ '', '', '', '', '', '', '', '', ''
+  const board =
+  [ '', '', '',
+    '', '', '',
+    '', '', ''
   ]
   $('.box').on('click', function (event) {
     $('this').off(event)
