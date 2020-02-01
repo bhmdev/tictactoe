@@ -11,12 +11,20 @@
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
-
-
     <body>
       <h1>Tic Tac Toe</h1>
-      <h2>Welcome to this wonderful game of Tic Tac Toe...may the odds be ever
-        in your favor.</h2>
+      <form id="signUp">
+        <fieldset>
+          <legend>Sign Up!</legend>
+          Email:<br>
+          <input name="credentials[email]" type="text" placeholder="Your Email Here"><br>
+          Password:<br>
+          <input name="credentials[password]" type="password" placeholder="Password Please"><br>
+          Password Confirmation:<br>
+          <input name="credentials[password_confirmation]" type="password" placeholder="Password Please"><br>
+          <input type="submit" value="Enjoy Your Game 😎">
+        </fieldset>
+      </form>
       <form id="signIn">
         <fieldset>
           <legend>Login</legend>
@@ -27,44 +35,23 @@
           <input type="submit" value="Sign In">
         </fieldset>
       </form>
-      <!-- //This creates a Login Form with a submit button. The login form includes
-      a email input box and a password input box.-->
-
-<form id="signUp">
-  <fieldset>
-    <legend>Sign Up!</legend>
-    Email:<br>
-    <input name="credentials[email]" type="text" placeholder="Your Email Here"><br>
-    Password:<br>
-    <input name="credentials[password]" type="password" placeholder="Password Please"><br>
-    Password Confirmation:<br>
-    <input name="credentials[password_confirmation]" type="password" placeholder="Password Please"><br>
-    <input type="submit" value="Enjoy Your Game 😎">
-  </fieldset>
-</form>
-
-
+      <form id="changePassword">
+        <fieldset>
+          <legend>Change Password</legend>
+          Password:<br>
+          <input name="passwords[old]" type="password" placeholder="Old Password Please"><br>
+          <input name="passwords[new]" type="password" placeholder="New Password Please"><br>
+          <input type="submit" value="Change Password">
+        </fieldset>
+      </form>
 <form id="signOut">
   <fieldset>
     <input type="submit" value="Sign Out">
   </fieldset>
 </form>
-
-
 <form id="newGame">
   <fieldset>
     <input type="submit" value="New Game">
-  </fieldset>
-</form>
-
-
-<form id="changePassword">
-  <fieldset>
-    <legend>Change Password</legend>
-    Password:<br>
-    <input name="passwords[old]" type="password" placeholder="Old Password Please"><br>
-    <input name="passwords[new]" type="password" placeholder="New Password Please"><br>
-    <input type="submit" value="Change Password">
   </fieldset>
 </form>
 
@@ -78,7 +65,7 @@
   <div id="5" class="col-4 box"></div>
   <div id="6" class="col-4 box"></div>
   <div id="7" class="col-4 box"></div>
-  <div id="8" class="col-4 box"></div>
+  <div id="8" class="col-4 box"> </div>
 </div>
 </div>
     </body>

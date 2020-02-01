@@ -7,5 +7,21 @@
 // require('./example')
 
 $(() => {
-
+  let currentPlayer = 'X'
+  const board = [ '', '', '', '', '', '', '', '', ''
+  ]
+  $('.box').on('click', function (event) {
+    $('this').off(event)
+    // add player to DOM/screen
+    $(event.target).text(currentPlayer)
+    // add player to javascript board
+    const position = event.target.id
+    board[position] = currentPlayer
+    if (currentPlayer === 'X') {
+      currentPlayer = 'O'
+    } else {
+      currentPlayer = 'X'
+    }
+    console.log(board)
+  })
 })

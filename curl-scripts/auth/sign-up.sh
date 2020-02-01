@@ -1,4 +1,4 @@
-#!bin/dash
+#!/bin/dash
 
 curl "https://tic-tac-toe-wdi.herokuapp.com/sign-up" \
   --include \
