@@ -13,6 +13,7 @@
     </head>
     <body>
       <h1>Tic Tac Toe</h1>
+
       <form id="signUp">
         <fieldset>
           <legend>Sign Up!</legend>
@@ -25,16 +26,22 @@
           <input type="submit" value="Enjoy Your Game 😎">
         </fieldset>
       </form>
+
       <form id="signIn">
         <fieldset>
-          <legend>Login</legend>
+
+        <legend>Login</legend>
+
           Email:<br>
           <input name="credentials[email]" type="text" placeholder="Your Email Here"><br>
+
           Password:<br>
           <input name="credentials[password]" type="password" placeholder="Password Please 🐳"><br>
           <input type="submit" value="Sign In">
         </fieldset>
       </form>
+
+
       <form id="changePassword">
         <fieldset>
           <legend>Change Password</legend>
@@ -44,18 +51,21 @@
           <input type="submit" value="Change Password">
         </fieldset>
       </form>
+
 <form id="signOut">
   <fieldset>
     <input type="submit" value="Sign Out">
   </fieldset>
 </form>
+
 <form id="newGame">
   <fieldset>
     <input type="submit" value="New Game">
   </fieldset>
 </form>
 
-<div class="container text-center">
+
+<div class="container text-center" id="boardGame">
 <div class="row">
   <div id="0" class="col-4 box"></div>
   <div id="1" class="col-4 box"></div>
@@ -65,8 +75,11 @@
   <div id="5" class="col-4 box"></div>
   <div id="6" class="col-4 box"></div>
   <div id="7" class="col-4 box"></div>
-  <div id="8" class="col-4 box"> </div>
+  <div id="8" class="col-4 box"></div>
 </div>
 </div>
-    </body>
+<!-- <div class="winMessage" id="winMessage"></div>
+  <div data-win-message-text></div>
+  <button id="restartButton">Restart Game</button> -->
+</body>
 </html>
