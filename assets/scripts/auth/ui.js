@@ -1,11 +1,11 @@
 const store = require('./../store')
 
 const onSignUpSuccess = function (response) {
-  // console.log('yay it works - have a good time!')
   $('#message').text(response.user.email + ' successfully signed up')
-  $('#sign-up').trigger('reset')
+  $('#signUp').trigger('reset')
   $('#message').removeClass()
   $('#message').addClass('success-message')
+  $('#signUp').hide()
 }
 
 const onSignUpFailure = function (response) {
@@ -16,13 +16,13 @@ const onSignUpFailure = function (response) {
 
 const onSignInSuccess = function (response) {
   $('#message').text(response.user.email + ' successfully signed in')
-  $('#sign-in').trigger('reset')
+  $('#signIn').trigger('reset')
   store.user = response.user
-  $('#change-password').show()
-  $('#sign-out').show()
-  $('#board-game').show()
-  $('#sign-in').hide()
-  $('#sign-up').hide()
+  $('#changePassword').show()
+  $('#signOut').show()
+  $('#boardGame').show()
+  $('#signIn').hide()
+  $('#signUp').hide()
 }
 
 const onSignInFailure = function (response) {
@@ -35,7 +35,7 @@ const onChangePasswordFailure = function (response) {
 
 const onChangePasswordSuccess = function (response) {
   $('#message').text('Change Password Succeeded')
-  $('#change-password').trigger('reset')
+  $('#changePassword').trigger('reset')
 }
 
 const onSignOutFailure = function (response) {
@@ -44,11 +44,15 @@ const onSignOutFailure = function (response) {
 
 const onSignOutSuccess = function (response) {
   $('#message').text('Sign Out Succeeded')
-  $('#change-password').hide()
-  $('#sign-out').hide()
-  $('#sign-in').show()
-  $('#sign-up').show()
+  $('#changePassword').hide()
+  $('#signOut').hide()
+  $('#signIn').show()
+  $('#signUp').show()
   store.user = null
+}
+
+const onWinGame = function (response) {
+  $('#message').text(response.user.emaail + ' Has won the game!').show()
 }
 
 module.exports = {
@@ -59,5 +63,6 @@ module.exports = {
   onSignOutSuccess,
   onSignOutFailure,
   onChangePasswordFailure,
-  onChangePasswordSuccess
+  onChangePasswordSuccess,
+  onWinGame
 }

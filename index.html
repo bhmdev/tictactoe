@@ -13,7 +13,7 @@
     </head>
     <body>
       <h1>Tic Tac Toe</h1>
-
+      <p id="message"></p>
       <form id="signUp">
         <fieldset>
           <legend>Sign Up!</legend>
@@ -58,24 +58,21 @@
   </fieldset>
 </form>
 
-<form id="newGame">
-  <fieldset>
-    <input type="submit" value="New Game">
-  </fieldset>
-</form>
+<div class='buttonspot-container'>
+<button id="onNewGame" class='new-game'>New Game</button>
+</div>
 
-
-<div class="container text-center" id="boardGame">
+<div class="container text-center" id="board">
 <div class="row">
-  <div id="0" class="col-4 box"></div>
-  <div id="1" class="col-4 box"></div>
-  <div id="2" class="col-4 box"></div>
-  <div id="3" class="col-4 box"></div>
-  <div id="4" class="col-4 box"></div>
-  <div id="5" class="col-4 box"></div>
-  <div id="6" class="col-4 box"></div>
-  <div id="7" class="col-4 box"></div>
-  <div id="8" class="col-4 box"></div>
+  <div id="0" class="col-4 box" data-cell-index='0'></div>
+  <div id="1" class="col-4 box" data-cell-index='1'></div>
+  <div id="2" class="col-4 box" data-cell-index='2'></div>
+  <div id="3" class="col-4 box" data-cell-index='3'></div>
+  <div id="4" class="col-4 box" data-cell-index='4'></div>
+  <div id="5" class="col-4 box" data-cell-index='5'></div>
+  <div id="6" class="col-4 box" data-cell-index='6'></div>
+  <div id="7" class="col-4 box" data-cell-index='7'></div>
+  <div id="8" class="col-4 box" data-cell-index='8'></div>
 </div>
 </div>
 <!-- <div class="winMessage" id="winMessage"></div>

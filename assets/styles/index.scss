@@ -36,24 +36,24 @@ fieldset {
   text-align: center;
 }
 
-#signUp {
-  justify-content: flex-end;
+// #signUp {
+//   justify-content: flex-end;
+// }
+
+.success-message {
+  color: green;
+}
+
+.failure-message {
+  color: red;
 }
 
 
+.on-win-game {
+  color: orange;
+}
 
-
-// .winMessage {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   botton: 0;
-//   background-color: black
-//   display: flex;
-//   justify-content: center;
-// align-items: center;
-// }
-body {
-  margin: 0;
+.buttonspot-container {
+  display: flex;
+  justify-content: center;
 }
