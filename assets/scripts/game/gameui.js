@@ -1,10 +1,5 @@
 const store = require('./../store')
 
-const onWinGame = function (response) {
-  $('#message').text('You have won the game!')
-  console.log('Great Job')
-}
-
 const onNewGameSuccess = function (response) {
   store.game = response.game // save the game to store
   $('#message').text('New game created!')
@@ -19,6 +14,10 @@ const onNewGameFailure = function (response) {
 
 const onWrongSquare = function (response) {
   $('#message').text(`You can't play here`)
+}
+
+const onWinGame = function (response) {
+  $('#message').text('You have won the game!')
 }
 
 module.exports = {

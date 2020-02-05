@@ -11,7 +11,7 @@ const board = ['', '', '', '', '', '', '', '', '']
 const checkDraw = function () {
   if (store.draw) {
     $('#gameMessages').text('You have tied!')
-    console.log()
+    $('#board').hide()
   }
 }
 
@@ -104,6 +104,7 @@ const boardClick = function (event) {
 const onWinGame = function () {
   if (store.winner) {
     $('#gameMessages').text('You have won the game!')
+    $('#board').hide()
   }
 }
 // add player to DOM/screen
