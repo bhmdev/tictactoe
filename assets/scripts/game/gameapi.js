@@ -47,7 +47,7 @@ const updateGame = function (position) {
           index: position,
           value: store.currentPlayer
         },
-        over: null
+        over: false
       }
     }
   })

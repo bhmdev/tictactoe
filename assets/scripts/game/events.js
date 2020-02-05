@@ -10,7 +10,7 @@ const board = ['', '', '', '', '', '', '', '', '']
 
 const checkDraw = function () {
   if (store.draw) {
-    $('#gameMessages').text('You have tied!')
+    $('#gameMessages').text('You have tied! Click New Game to play again')
     $('#board').hide()
   }
 }
@@ -44,6 +44,7 @@ const checkWinner = function () {
     }
   }
 }
+
 const onNewGame = function (event) {
   store.winner = false
   store.draw = false
@@ -57,12 +58,12 @@ const onNewGame = function (event) {
   $('#7').text('')
   $('#8').text('')
   event.preventDefault()
-  for (let i = 0; i < board.length; i++) {
-    board[i] = ''
-  }
   store.currentPlayer = 'X'
   $('#gameMessages').text('')
   console.log(event.target)
+  for (let i = 0; i < board.length; i++) {
+    board[i] = ''
+  }
   gameapi.onNewGame()
     .then(gameui.onNewGameSuccess)
     .catch(gameui.onNewGameFailure)
@@ -73,6 +74,7 @@ const boardClick = function (event) {
   const position = event.target.id
   if ($(event.target).text() === '') {
     $(event.target).text(store.currentPlayer)
+    board[position] = store.currentPlayer
     if (store.currentPlayer === 'X') {
       store.currentPlayer = 'O'
     } else {
@@ -80,7 +82,7 @@ const boardClick = function (event) {
     }
     // add X or O to screen
     console.log('position is ', position) // check what the position is?
-    board[position] = store.currentPlayer
+    // board[position] = store.currentPlayer
     console.log('board is ', board)
     $('#gameMessages').text('')
   } else {
@@ -103,7 +105,7 @@ const boardClick = function (event) {
 
 const onWinGame = function () {
   if (store.winner) {
-    $('#gameMessages').text('You have won the game!')
+    $('#gameMessages').text('You have won the game! Click New Game to play again')
     $('#board').hide()
   }
 }

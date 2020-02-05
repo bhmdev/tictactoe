@@ -23,6 +23,7 @@ const onSignInSuccess = function (response) {
   $('#boardGame').show()
   $('#signIn').hide()
   $('#signUp').hide()
+  $('#gameMessages').text('Click New Game to embark on a wild adventure')
 }
 
 const onSignInFailure = function (response) {
