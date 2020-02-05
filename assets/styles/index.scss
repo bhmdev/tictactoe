@@ -1,13 +1,59 @@
 @import '~bootstrap/scss/bootstrap';
 
 .box {
-  border: 3px solid black;
+  align-items: center;
   background-color: lightgreen;
+  border: 3px solid black;
   color: black;
-  padding: 20px;
+  cursor: pointer;
   display: flex;
-  height: 250px;
-  width: 250px;
-  align-items: left;
+  font-family: sans-serif;
+  font-size: 120px;
+  height: 200px;
+  justify-content: center;
+  padding: 20px;
+  width: 200px;
+}
+
+.box:hover {
+  background-color: lightpink;
+  opacity: 6;
+}
+
+h1 {
+  text-align: center;
+}
+
+legend {
+  justify-content: center;
+}
+
+.sign-up {
+  justify-content: center;
+}
+
+fieldset {
+  text-align: center;
+}
+
+// #signUp {
+//   justify-content: flex-end;
+// }
+
+.success-message {
+  color: green;
+}
+
+.failure-message {
+  color: red;
+}
+
+
+.on-win-game {
+  color: orange;
+}
+
+.buttonspot-container {
+  display: flex;
   justify-content: center;
 }

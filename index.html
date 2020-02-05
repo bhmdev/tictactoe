@@ -11,38 +11,47 @@
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
-
-
     <body>
       <h1>Tic Tac Toe</h1>
-      <h2>Welcome to this wonderful game of Tic Tac Toe...may the odds be ever
-        in your favor.</h2>
-      <form id="signIn">
+      <div id="message"></div>
+      <div id='gameMessages'></div>
+      <form id="signUp">
         <fieldset>
-          <legend>Login</legend>
+          <legend>Sign Up!</legend>
           Email:<br>
           <input name="credentials[email]" type="text" placeholder="Your Email Here"><br>
+          Password:<br>
+          <input name="credentials[password]" type="password" placeholder="Password Please"><br>
+          Password Confirmation:<br>
+          <input name="credentials[password_confirmation]" type="password" placeholder="Password Please"><br>
+          <input type="submit" value="Enjoy Your Game 😎">
+        </fieldset>
+      </form>
+
+      <form id="signIn">
+
+        <fieldset>
+        <legend>Login</legend>
+
+          Email:<br>
+          <input name="credentials[email]" type="text" placeholder="Your Email Here"><br>
+
           Password:<br>
           <input name="credentials[password]" type="password" placeholder="Password Please 🐳"><br>
           <input type="submit" value="Sign In">
         </fieldset>
       </form>
-      <!-- //This creates a Login Form with a submit button. The login form includes
-      a email input box and a password input box.-->
 
-<form id="signUp">
-  <fieldset>
-    <legend>Sign Up!</legend>
-    Email:<br>
-    <input name="credentials[email]" type="text" placeholder="Your Email Here"><br>
-    Password:<br>
-    <input name="credentials[password]" type="password" placeholder="Password Please"><br>
-    Password Confirmation:<br>
-    <input name="credentials[password_confirmation]" type="password" placeholder="Password Please"><br>
-    <input type="submit" value="Enjoy Your Game 😎">
-  </fieldset>
-</form>
 
+      <form id="changePassword">
+        <fieldset>
+          <legend>Change Password</legend>
+          Password:<br>
+          <input name="passwords[old]" type="password" placeholder="Old Password Please"><br>
+          <input name="passwords[new]" type="password" placeholder="New Password Please"><br>
+          <input type="submit" value="Change Password">
+        </fieldset>
+      </form>
 
 <form id="signOut">
   <fieldset>
@@ -50,36 +59,23 @@
   </fieldset>
 </form>
 
-
-<form id="newGame">
-  <fieldset>
-    <input type="submit" value="New Game">
-  </fieldset>
-</form>
+<div class='buttonspot-container'>
+<button id="onNewGame" class='new-game'>New Game</button>
+</div>
 
 
-<form id="changePassword">
-  <fieldset>
-    <legend>Change Password</legend>
-    Password:<br>
-    <input name="passwords[old]" type="password" placeholder="Old Password Please"><br>
-    <input name="passwords[new]" type="password" placeholder="New Password Please"><br>
-    <input type="submit" value="Change Password">
-  </fieldset>
-</form>
-
-<div class="container text-center">
+<div class="container text-center" id="board">
 <div class="row">
-  <div id="0" class="col-4 box"></div>
-  <div id="1" class="col-4 box"></div>
-  <div id="2" class="col-4 box"></div>
-  <div id="3" class="col-4 box"></div>
-  <div id="4" class="col-4 box"></div>
-  <div id="5" class="col-4 box"></div>
-  <div id="6" class="col-4 box"></div>
-  <div id="7" class="col-4 box"></div>
-  <div id="8" class="col-4 box"></div>
+  <div id="0" class="col-4 box" data-cell-index='0'></div>
+  <div id="1" class="col-4 box" data-cell-index='1'></div>
+  <div id="2" class="col-4 box" data-cell-index='2'></div>
+  <div id="3" class="col-4 box" data-cell-index='3'></div>
+  <div id="4" class="col-4 box" data-cell-index='4'></div>
+  <div id="5" class="col-4 box" data-cell-index='5'></div>
+  <div id="6" class="col-4 box" data-cell-index='6'></div>
+  <div id="7" class="col-4 box" data-cell-index='7'></div>
+  <div id="8" class="col-4 box" data-cell-index='8'></div>
 </div>
 </div>
-    </body>
+</body>
 </html>

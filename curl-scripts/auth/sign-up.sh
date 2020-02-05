@@ -1,4 +1,3 @@
-#!bin/dash
 
 curl "https://tic-tac-toe-wdi.herokuapp.com/sign-up" \
   --include \
@@ -9,7 +8,6 @@ curl "https://tic-tac-toe-wdi.herokuapp.com/sign-up" \
       "email": "'"${EMAIL}"'",
       "password": "'"${PASSWORD}"'",
       "password_confirmation": "'"${PASSWORD}"'"
-
     }
   }'
 
