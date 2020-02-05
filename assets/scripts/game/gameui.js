@@ -9,6 +9,7 @@ const onNewGameSuccess = function (response) {
   store.game = response.game // save the game to store
   $('#message').text('New game created!')
   $('#onNewGame').trigger('reset')
+  $('#board').show()
 }
 
 const onNewGameFailure = function (response) {

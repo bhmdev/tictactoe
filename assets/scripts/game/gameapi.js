@@ -34,7 +34,27 @@ const moveMade = function (position) {
   })
 }
 
+const updateGame = function (position) {
+  return $.ajax({
+    url: config.apiUrl + '/games/' + store.game.id,
+    method: 'PATCH',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data: {
+      game: {
+        cell: {
+          index: position,
+          value: store.currentPlayer
+        },
+        over: null
+      }
+    }
+  })
+}
+
 module.exports = {
   onNewGame,
-  moveMade
+  moveMade,
+  updateGame
 }
