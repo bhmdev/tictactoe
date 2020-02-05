@@ -17,7 +17,8 @@ const onWrongSquare = function (response) {
 }
 
 const onWinGame = function (response) {
-  $('#message').text('You have won the game!')
+  $('#message').text('You have won the game!🤟🏾👨🏾‍💻🕺🏽')
+  $('#board').hide()
 }
 
 module.exports = {

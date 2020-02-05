@@ -10,7 +10,7 @@ const board = ['', '', '', '', '', '', '', '', '']
 
 const checkDraw = function () {
   if (store.draw) {
-    $('#gameMessages').text('You have tied! Click New Game to play again')
+    $('#gameMessages').text('You have tied!')
     $('#board').hide()
   }
 }
@@ -44,7 +44,6 @@ const checkWinner = function () {
     }
   }
 }
-
 const onNewGame = function (event) {
   store.winner = false
   store.draw = false
@@ -58,12 +57,12 @@ const onNewGame = function (event) {
   $('#7').text('')
   $('#8').text('')
   event.preventDefault()
-  store.currentPlayer = 'X'
-  $('#gameMessages').text('')
-  console.log(event.target)
   for (let i = 0; i < board.length; i++) {
     board[i] = ''
   }
+  store.currentPlayer = 'X'
+  $('#gameMessages').text('')
+  console.log(event.target)
   gameapi.onNewGame()
     .then(gameui.onNewGameSuccess)
     .catch(gameui.onNewGameFailure)
@@ -74,23 +73,21 @@ const boardClick = function (event) {
   const position = event.target.id
   if ($(event.target).text() === '') {
     $(event.target).text(store.currentPlayer)
+    if (store.currentPlayer === 'X') {
+      store.currentPlayer = 'O'
+    } else {
+      store.currentPlayer = 'X'
+    }
+    // add X or O to screen
     board[position] = store.currentPlayer
-    gameapi.moveMade(position)
-      .then(function () {
-        if (store.currentPlayer === 'X') {
-          store.currentPlayer = 'O'
-        } else {
-          store.currentPlayer = 'X'
-        }
-        checkWinner()
-        if (store.currentPlayer === 'X') {
-          $('#message').text('Its Xs turn')
-        } else {
-          $('#message').text('Its Os  turn')
-        }
-      })
-      .catch(console.error)
+    // $(store.currentPlayer).text('space taken')
+    $('#gameMessages').text('')
+  } else {
+    $('#gameMessages').text('This is an invalid spot, go somewhere else')
   }
+ // check what the board is?
+  gameapi.moveMade(position)
+    .catch(console.error)
 
   checkWinner()
   if (store.currentPlayer === 'X') {
@@ -102,11 +99,14 @@ const boardClick = function (event) {
 
 const onWinGame = function () {
   if (store.winner) {
-    $('#gameMessages').text('You have won the game! Click New Game to play again')
+    $('#gameMessages').text('You have won the game!')
     $('#board').hide()
   }
 }
+
+// you could also use $('this') in place of event.target
 // add player to DOM/screen
+//
 module.exports = {
   boardClick,
   checkWinner,
