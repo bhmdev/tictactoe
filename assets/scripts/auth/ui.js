@@ -24,6 +24,7 @@ const onSignInSuccess = function (response) {
   $('#signIn').hide()
   $('#signUp').hide()
   $('#gameMessages').text('Click New Game to embark on a wild adventure')
+  $('#onNewGame').show()
 }
 
 const onSignInFailure = function (response) {
@@ -49,6 +50,8 @@ const onSignOutSuccess = function (response) {
   $('#signOut').hide()
   $('#signIn').show()
   $('#signUp').show()
+  $('#onNewGame').hide()
+  $('#board').hide()
   store.user = null
 }
 

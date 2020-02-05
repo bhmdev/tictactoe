@@ -13,9 +13,6 @@ const onNewGame = function () {
 }
 
 const moveMade = function (position) {
-  console.log('store is', store)
-  console.log('position is', position)
-  console.log('currentPlayer is', store.currentPlayer)
   return $.ajax({
     url: config.apiUrl + '/games/' + store.game.id,
     method: 'PATCH',

@@ -75,31 +75,28 @@ const boardClick = function (event) {
   if ($(event.target).text() === '') {
     $(event.target).text(store.currentPlayer)
     board[position] = store.currentPlayer
-    if (store.currentPlayer === 'X') {
-      store.currentPlayer = 'O'
-    } else {
-      store.currentPlayer = 'X'
-    }
-    // add X or O to screen
-    console.log('position is ', position) // check what the position is?
-    // board[position] = store.currentPlayer
-    console.log('board is ', board)
-    $('#gameMessages').text('')
-  } else {
-    $('#gameMessages').text('This is an invalid spot, go somewhere else')
+    gameapi.moveMade(position)
+      .then(function () {
+        if (store.currentPlayer === 'X') {
+          store.currentPlayer = 'O'
+        } else {
+          store.currentPlayer = 'X'
+        }
+        checkWinner()
+        if (store.currentPlayer === 'X') {
+          $('#message').text('Its Xs turn')
+        } else {
+          $('#message').text('Its Os  turn')
+        }
+      })
+      .catch(console.error)
   }
-  console.log('board is ', board) // check what the board is?
-  gameapi.moveMade(position)
-    .then(console.log())
-    .catch(console.error)
 
   checkWinner()
   if (store.currentPlayer === 'X') {
     $('#message').text('Its Xs turn')
-    console.log()
   } else {
     $('#message').text('Its Os  turn')
-    console.log()
   }
 }
 
