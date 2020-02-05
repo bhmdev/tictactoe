@@ -23,7 +23,7 @@ const onSignInSuccess = function (response) {
   $('#boardGame').show()
   $('#signIn').hide()
   $('#signUp').hide()
-  $('#gameMessages').text('Click New Game to embark on a wild adventure')
+  $('#gameMessages').text('Click the NEW GAME button to embark on a wild adventure')
   $('#onNewGame').show()
 }
 
@@ -56,7 +56,7 @@ const onSignOutSuccess = function (response) {
 }
 
 const onWinGame = function (response) {
-  $('#message').text(response.user.emaail + ' Has won the game!').show()
+  $('#message').text(response.user.emaail + ' Has WON the game!🤟🏾👨🏾‍💻🕺🏽').show()
 }
 
 module.exports = {
