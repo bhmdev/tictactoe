@@ -81,7 +81,6 @@ const boardClick = function (event) {
     // add X or O to screen
     console.log('position is ', position) // check what the position is?
     board[position] = store.currentPlayer
-    // $(store.currentPlayer).text('space taken')
     console.log('board is ', board)
     $('#gameMessages').text('')
   } else {
@@ -102,23 +101,12 @@ const boardClick = function (event) {
   }
 }
 
-// const checkDraw = function () {
-//   if (store.draw) {
-//     $('#gameMessages').text('You have tied!')
-//     console.log()
-//   }
-// }
-
 const onWinGame = function () {
   if (store.winner) {
     $('#gameMessages').text('You have won the game!')
-    console.log('in winners on game')
   }
 }
-
-// you could also use $('this') in place of event.target
 // add player to DOM/screen
-//
 module.exports = {
   boardClick,
   checkWinner,
