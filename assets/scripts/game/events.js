@@ -85,7 +85,7 @@ const boardClick = function (event) {
   } else {
     $('#gameMessages').text('This is an invalid spot, go somewhere else')
   }
- // check what the board is?
+  // check what the board is?
   gameapi.moveMade(position)
     .catch(console.error)
 
@@ -103,7 +103,6 @@ const onWinGame = function () {
     $('#board').hide()
   }
 }
-
 // you could also use $('this') in place of event.target
 // add player to DOM/screen
 //

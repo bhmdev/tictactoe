@@ -1,5 +1,12 @@
 @import '~bootstrap/scss/bootstrap';
 
+// body {
+//   background: $background-color-all;
+//   background-image: url('./public/testbg.jpg');
+//   font-family: $page-font;
+//   opacity: 93%;
+// }
+
 .box {
   align-items: center;
   background-color: lightgreen;
@@ -36,10 +43,6 @@ fieldset {
   text-align: center;
 }
 
-// #signUp {
-//   justify-content: flex-end;
-// }
-
 .success-message {
   color: green;
 }
@@ -47,7 +50,6 @@ fieldset {
 .failure-message {
   color: red;
 }
-
 
 .on-win-game {
   color: orange;

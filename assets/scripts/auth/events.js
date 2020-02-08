@@ -22,6 +22,7 @@ const onChangePassword = function (event) {
   event.preventDefault()
   const form = event.target
   const data = getFormFields(form)
+  console.log(data)
   api.onChangePassword(data)
     .then(ui.onChangePasswordSuccess)
     .catch(ui.onChangePasswordFailure)
@@ -32,9 +33,16 @@ const onSignOut = function (event) {
     .then(ui.onSignOutSuccess)
 }
 
+const onGetGames = function (event) {
+  event.preventDefault()
+  api.gameStats()
+    .then(ui.onGetGamesResults)
+}
+
 module.exports = {
   onSignUp,
   onSignIn,
   onChangePassword,
-  onSignOut
+  onSignOut,
+  onGetGames
 }

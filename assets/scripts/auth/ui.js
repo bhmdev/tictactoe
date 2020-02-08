@@ -12,6 +12,7 @@ const onSignUpFailure = function (response) {
   $('#message').text('Sign up failed')
   $('#message').removeClass()
   $('#message').addClass('failure-message')
+  $('#signUp').trigger('reset')
 }
 
 const onSignInSuccess = function (response) {
@@ -29,10 +30,12 @@ const onSignInSuccess = function (response) {
 
 const onSignInFailure = function (response) {
   $('#message').text('Sign in failed')
+  $('#signIn').trigger('reset')
 }
 
 const onChangePasswordFailure = function (response) {
   $('#message').text('Change Password failed')
+  $('#changePassword').trigger('reset')
 }
 
 const onChangePasswordSuccess = function (response) {
@@ -55,8 +58,12 @@ const onSignOutSuccess = function (response) {
   store.user = null
 }
 
-const onWinGame = function (response) {
-  $('#message').text(response.user.emaail + ' Has WON the game!🤟🏾👨🏾‍💻🕺🏽').show()
+// const onWinGame = function (response) {
+//   $('#message').text(response.user.email + ' Has WON the game!🤟🏾👨🏾‍💻🕺🏽').show()
+// }
+
+const onGetGamesResults = function (data) {
+  $('#message').text(`You've played ${data.games.length} games.`)
 }
 
 module.exports = {
@@ -68,5 +75,6 @@ module.exports = {
   onSignOutFailure,
   onChangePasswordFailure,
   onChangePasswordSuccess,
-  onWinGame
+  // onWinGame,
+  onGetGamesResults
 }
