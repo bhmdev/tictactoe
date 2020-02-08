@@ -58,12 +58,12 @@ const onSignOutSuccess = function (response) {
   store.user = null
 }
 
-// const onWinGame = function (response) {
-//   $('#message').text(response.user.email + ' Has WON the game!🤟🏾👨🏾‍💻🕺🏽').show()
-// }
-
 const onGetGamesResults = function (data) {
   $('#message').text(`You've played ${data.games.length} games.`)
+}
+
+const onWinGame = function (response) {
+  $('#message').text(response.user.email + ' Has WON the game!🤟🏾👨🏾‍💻🕺🏽').show()
 }
 
 module.exports = {
@@ -75,6 +75,6 @@ module.exports = {
   onSignOutFailure,
   onChangePasswordFailure,
   onChangePasswordSuccess,
-  // onWinGame,
+  onWinGame,
   onGetGamesResults
 }

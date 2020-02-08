@@ -85,7 +85,7 @@ const boardClick = function (event) {
   } else {
     $('#gameMessages').text('This is an invalid spot, go somewhere else')
   }
-  // check what the board is?
+
   gameapi.moveMade(position)
     .catch(console.error)
 
