@@ -47,15 +47,16 @@ As a user once the game is over, I should not be able to keep playing
 
 **Technologies Utilized**
 
-HTML5
-CSS3
-JavaScript (ES6)
-SASS
-Bootstrap
-jQuery
-AJAX
-Git/GitHub
-
+<ol>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript (ES6)</li>
+<li>SASS</li>
+<li>Bootstrap</li>
+<li>jQuery</li>
+<li>AJAX</li>
+<li>Git/GitHub</li>
+</ol>
 **Unsolved Issues/Future Goals**
 
 - Still need to possibly put a background image on the game board or just in the entire background of the whole SPA.
