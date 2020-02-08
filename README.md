@@ -1,15 +1,16 @@
-# Application Title: A Description
+**Tic Tac Toe**
 
-This application allows a person to play tic tac toe.
+**Description**
+This application allows a person to play Tic Tac Toe.
 
-## Important Links
+**Important Links**
 
-- [Other Repo](www.link.com)
-- [Deployed API](www.link.com)
-- [Deployed Client](www.link.com)
+- [Deployed API](https://bhmdev.github.io/tictactoe/)
+- [Deployed Client](https://github.com/bhmdev/tictactoe)
 
-## Planning Story
-// Landing/login page to have Tic Tac Toe as a string, as well as a form/interactive buttons to signup and login. There will be form-fields to type in your email/username and password
+**Planning Process**
+
+// The landing page to have Tic Tac Toe as a string, as well as a form/interactive buttons to signup and login. There will be form-fields to type in your email/username and password
 
 // On the gameplay page will have the tic tac toe playing field made with basic CSS, specifically with the use of borders
 
@@ -25,16 +26,16 @@ This application allows a person to play tic tac toe.
 
 // One of the 8 winner scenarios will just denote text at the bottom stating the player has won. There will be a button to logout and one to reset to the home screen.
 
-### User Stories
+**User Stories**
 
-Authentication
+**Authentication**
 
 As a user I want to be able to login as needed
 As a user I would want to have the option to change my password as needed
 As a user I want to be able to sign-out of my account so I can keep people away from my scores
 As a user I want to be able to sign up with my email address to create a login/password format from the readings).
 
-Game Play
+**Game Play**
 
 As a user I would like to start and reset the game as needed.
 As a user I want to see who’s turn it is so that I can play the game properly
@@ -44,21 +45,25 @@ As a user I would like to have a simple tic tac toe game to play
 As a user I want to be able to play another game right when one is finished
 As a user once the game is over, I should not be able to keep playing
 
-### Technologies Used
+**Technologies Utilized**
 
-- jQuery
-- HTML/CSS
-- Bootstrap
-- Javascript
+-HTML5
+-CSS3
+-JavaScript (ES6)
+-SASS
+-Bootstrap
+-jQuery
+-AJAX
+-Git/GitHub
 
-### Unsolved Problems
+**Unsolved Issues/Future Goals**
 
-- Still need to ....
-- Would like to eventually ....
+- Still need to possibly put a background image on the game board or just in the entire background of the whole SPA.
+- Would like to eventually put animation when you click each square and when you win the game.
+- Would love to have a guest player feature
+- Have an option to play the computer (AI)
 
-## Images
 
----
+**Wireframe:**
 
-#### Wireframe:
-![wireframe](https://lucidchart.zendesk.com/hc/article_attachments/360001080866/Facebook_Wireframe_-_New_Page.png)
+https://imgur.com/a/ZoQqkSd
