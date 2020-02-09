@@ -12,6 +12,8 @@ const checkDraw = function () {
   if (store.draw) {
     $('#gameMessages').text('You have tied!')
     $('#board').hide()
+    $('#message').hide()
+    $('#gameMessages').show('You have tied!')
   }
 }
 
@@ -62,7 +64,6 @@ const onNewGame = function (event) {
   }
   store.currentPlayer = 'X'
   $('#gameMessages').text('')
-  console.log(event.target)
   gameapi.onNewGame()
     .then(gameui.onNewGameSuccess)
     .catch(gameui.onNewGameFailure)
@@ -101,6 +102,7 @@ const onWinGame = function () {
   if (store.winner) {
     $('#gameMessages').text('You have won the game!')
     $('#board').hide()
+    $('#message').hide()
   }
 }
 // you could also use $('this') in place of event.target
