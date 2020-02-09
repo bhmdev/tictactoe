@@ -57,7 +57,8 @@ As a user once the game is over, I should not be able to keep playing
 <li>AJAX</li>
 <li>Git/GitHub</li>
 </ol>
-**Unsolved Issues/Future Goals**
+
+**Unsolved Issues & Future Goals**
 
 - Still need to possibly put a background image on the game board or just in the entire background of the whole SPA.
 - Would like to eventually put animation when you click each square and when you win the game.
