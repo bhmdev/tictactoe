@@ -18,7 +18,6 @@ const signIn = function (data) {
 }
 
 const onChangePassword = function (data) {
-  console.log('in api')
   return $.ajax({
     url: config.apiUrl + '/change-password',
     method: 'PATCH',

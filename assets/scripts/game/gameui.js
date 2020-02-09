@@ -5,7 +5,6 @@ const onNewGameSuccess = function (response) {
   $('#message').text('New game created!')
   $('#onNewGame').trigger('reset')
   $('#board').show()
-  $('#getGames').show()
 }
 
 const onNewGameFailure = function (response) {
@@ -20,6 +19,7 @@ const onWrongSquare = function (response) {
 const onWinGame = function (response) {
   $('#message').text('You have won the game!🤟🏾👨🏾‍💻🕺🏽')
   $('#board').hide()
+  $('#getGames').show()
 }
 
 module.exports = {

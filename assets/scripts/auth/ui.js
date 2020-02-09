@@ -58,8 +58,8 @@ const onSignOutSuccess = function (response) {
   $('#onNewGame').hide()
   $('#board').hide()
   $('#changePassword').trigger('reset')
-  $('#getGames').hide()
-  $('#gameMessages').hide('You have won the game!')
+  // $('#getGames').hide()
+  // $('#gameMessages').hide('You have won the game!')
   store.user = null
 }
 

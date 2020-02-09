@@ -14,6 +14,7 @@ const checkDraw = function () {
     $('#board').hide()
     $('#message').hide()
     $('#gameMessages').show('You have tied!')
+    $('#getGames').show()
   }
 }
 
@@ -102,7 +103,8 @@ const onWinGame = function () {
   if (store.winner) {
     $('#gameMessages').text('You have won the game!')
     $('#board').hide()
-    $('#message').hide()
+    $('#message').show()
+    $('#getGames').show()
   }
 }
 // you could also use $('this') in place of event.target
