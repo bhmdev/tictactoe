@@ -10,9 +10,9 @@ This application allows a person to play Tic Tac Toe.
 
 **Planning Process**
 
-The landing page to have Tic Tac Toe as a string, as well as a form/interactive buttons to signup and login. There will be form-fields to type in your email/username and password
+The landing page to have Tic Tac Toe as a string, as well as a form/interactive buttons to signup and login. There will be form-fields to type in your email/username and password.
 
-On the gameplay page will have the tic tac toe playing field made with basic CSS, specifically with the use of borders
+On the gameplay page will have the tic tac toe playing field made with basic CSS, specifically with the use of borders.
 
 On the top left corner of the page, there will be a button that changes color to denote who’s turn it is, X or O. Plan on using Bootstrap for these buttons/as well as a command that will change the after a move has been set.
 
@@ -30,20 +30,20 @@ One of the 8 winner scenarios will just denote text at the bottom stating the pl
 
 **Authentication**
 
-As a user I want to be able to login as needed
-As a user I would want to have the option to change my password as needed
-As a user I want to be able to sign-out of my account so I can keep people away from my scores
+As a user I want to be able to login as needed.
+As a user I would want to have the option to change my password as needed.
+As a user I want to be able to sign-out of my account so I can keep people away from my scores.
 As a user I want to be able to sign up with my email address to create a login/password format from the readings).
 
 **Game Play**
 
 As a user I would like to start and reset the game as needed.
-As a user I want to see who’s turn it is so that I can play the game properly
-As a user I do not want to be able to steal another users spot
-As a user I would like to know if I’ve won or lost by some indicator
-As a user I would like to have a simple tic tac toe game to play
-As a user I want to be able to play another game right when one is finished
-As a user once the game is over, I should not be able to keep playing
+As a user I want to see who’s turn it is so that I can play the game properly.
+As a user I do not want to be able to steal another users spot.
+As a user I would like to know if I’ve won or lost by some indicator.
+As a user I would like to have a simple tic tac toe game to play.
+As a user I want to be able to play another game right when one is finished.
+As a user once the game is over, I should not be able to keep playing.
 
 **Technologies Utilized**
 
