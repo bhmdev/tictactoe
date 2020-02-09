@@ -27,7 +27,7 @@ const onSignInSuccess = function (response) {
   $('#signUp').hide()
   $('#gameMessages').text('Click the NEW GAME button to embark on a wild adventure')
   $('#onNewGame').show()
-  $('#getGames').hide()
+  $('#getGames').show()
 }
 
 const onSignInFailure = function (response) {

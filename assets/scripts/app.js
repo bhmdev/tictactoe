@@ -20,4 +20,5 @@ $(() => {
   $('#board').hide()
   $('#onNewGame').hide()
   $('#getGames').on('click', authEvents.onGetGames)
+  $('#getGames').hide()
 })
