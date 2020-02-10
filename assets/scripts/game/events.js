@@ -103,7 +103,11 @@ const onWinGame = function () {
   if (store.winner) {
     $('#gameMessages').text('You have won the game!')
     $('#board').hide()
+<<<<<<< HEAD
     $('#message').hide()
+=======
+    $('#message').show()
+>>>>>>> project
     $('#getGames').show()
   }
 }
