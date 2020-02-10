@@ -6,6 +6,7 @@ const onNewGameSuccess = function (response) {
   $('#onNewGame').trigger('reset')
   $('#board').show()
   $('#getGames').show()
+  $('#message').show()
 }
 
 const onNewGameFailure = function (response) {

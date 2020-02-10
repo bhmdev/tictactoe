@@ -6,7 +6,7 @@ const onSignUpSuccess = function (response) {
   $('#message').removeClass()
   $('#message').addClass('success-message')
   $('#signUp').hide()
-  $('#getGames').hide()
+  $('#getGames').show()
 }
 
 const onSignUpFailure = function (response) {
@@ -28,6 +28,8 @@ const onSignInSuccess = function (response) {
   $('#gameMessages').text('Click the NEW GAME button to embark on a wild adventure')
   $('#onNewGame').show()
   $('#getGames').show()
+  $('#gameMessages').show()
+  $('#message').show()
 }
 
 const onSignInFailure = function (response) {
