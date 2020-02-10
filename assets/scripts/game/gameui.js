@@ -2,11 +2,13 @@ const store = require('./../store')
 
 const onNewGameSuccess = function (response) {
   store.game = response.game // save the game to store
-  $('#message').text('New game created!')
+  $('#getGamesMessage').show()
+  $('#message').text(`New game created! It's X's turn`)
   $('#onNewGame').trigger('reset')
   $('#board').show()
   $('#getGames').show()
   $('#message').show()
+  $('#getGamesMessage').hide()
 }
 
 const onNewGameFailure = function (response) {
@@ -21,7 +23,6 @@ const onWrongSquare = function (response) {
 const onWinGame = function (response) {
   $('#message').text('You have won the game!🤟🏾👨🏾‍💻🕺🏽')
   $('#board').hide()
-  $('#getGames').show()
 }
 
 module.exports = {

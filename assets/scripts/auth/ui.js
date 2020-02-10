@@ -7,6 +7,7 @@ const onSignUpSuccess = function (response) {
   $('#message').addClass('success-message')
   $('#signUp').hide()
   $('#getGames').show()
+  $('#gameMessages').show()
 }
 
 const onSignUpFailure = function (response) {
@@ -30,6 +31,7 @@ const onSignInSuccess = function (response) {
   $('#getGames').show()
   $('#gameMessages').show()
   $('#message').show()
+  $('#getGamesMessage').show()
 }
 
 const onSignInFailure = function (response) {
@@ -45,6 +47,7 @@ const onChangePasswordFailure = function (response) {
 const onChangePasswordSuccess = function (response) {
   $('#message').text('Change Password Succeeded')
   $('#changePassword').trigger('reset')
+  $('#getGamesMessage').hide()
 }
 
 const onSignOutFailure = function (response) {
@@ -60,13 +63,15 @@ const onSignOutSuccess = function (response) {
   $('#onNewGame').hide()
   $('#board').hide()
   $('#changePassword').trigger('reset')
-  // $('#getGames').hide()
-  // $('#gameMessages').hide('You have won the game!')
+  $('#getGames').hide()
+  $('#gameMessages').hide()
+  $('#getGamesMessage').hide()
   store.user = null
 }
 
 const onGetGamesResults = function (data) {
-  $('#message').text(`You've played ${data.games.length} games.`)
+  $('#getGamesMessage').text(`You've played ${data.games.length} games.`)
+  $('#getGames').show()
 }
 
 const onWinGame = function (response) {

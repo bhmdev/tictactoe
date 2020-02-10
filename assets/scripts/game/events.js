@@ -104,7 +104,6 @@ const onWinGame = function () {
     $('#gameMessages').text('You have won the game!')
     $('#board').hide()
     $('#message').hide()
-    $('#message').show()
     $('#getGames').show()
   }
 }
