@@ -5,11 +5,8 @@ const onNewGameSuccess = function (response) {
   $('#message').text('New game created!')
   $('#onNewGame').trigger('reset')
   $('#board').show()
-<<<<<<< HEAD
   $('#getGames').show()
   $('#message').show()
-=======
->>>>>>> project
 }
 
 const onNewGameFailure = function (response) {
