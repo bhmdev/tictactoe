@@ -70,7 +70,7 @@ const onSignOutSuccess = function (response) {
 }
 
 const onGetGamesResults = function (data) {
-  $('#getGamesMessage').text(`You've played ${data.games.length} games.`)
+  $('#message').text(`You've played ${data.games.length} games.`)
   $('#getGames').show()
 }
 
