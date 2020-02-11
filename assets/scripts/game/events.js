@@ -101,9 +101,9 @@ const boardClick = function (event) {
 
 const onWinGame = function () {
   if (store.winner) {
-    $('#gameMessages').text('You have won the game!')
+    $('#gameMessages').text(`${store.currentPlayer === 'X' ? 'O' : 'X'} has won the game!`)
     $('#board').hide()
-    $('#message').hide()
+    $('#message').show()
     $('#getGames').show()
   }
 }
