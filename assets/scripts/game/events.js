@@ -106,6 +106,7 @@ const onWinGame = function () {
     $('#board').hide()
     $('#message').fadeOut(2000)
     $('#getGames').show()
+    // this is to test
   }
 }
 // you could also use $('this') in place of event.target
