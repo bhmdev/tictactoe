@@ -12,9 +12,9 @@ const checkDraw = function () {
   if (store.draw) {
     $('#gameMessages').text('You have tied!')
     $('#board').hide()
-    $('#message').hide()
     $('#gameMessages').show('You have tied!')
     $('#getGames').show()
+    $('#message').show()
   }
 }
 
@@ -101,9 +101,10 @@ const boardClick = function (event) {
 
 const onWinGame = function () {
   if (store.winner) {
-    $('#gameMessages').text(`${store.currentPlayer === 'X' ? 'O' : 'X'} has won the game!`)
+    $('#gameMessages').text(`${store.currentPlayer === 'X' ? 'O' : 'X'} has won the game! Press New Game to keep being awesome.`)
+    $('#gameMessages').fadeIn(4000)
     $('#board').hide()
-    $('#message').show()
+    $('#message').fadeOut(2000)
     $('#getGames').show()
   }
 }
