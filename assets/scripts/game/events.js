@@ -13,7 +13,7 @@ const checkDraw = function () {
     $('#gameMessages').text(`You have tied!! Press New Game to try again!`)
     $('#gameMessages').fadeIn(4000)
     $('#board').hide()
-    $('#message').fadeOut(2000)
+    $('#message').fadeOut(8000)
     $('#getGames').show()
   }
 }
@@ -104,7 +104,7 @@ const onWinGame = function () {
     $('#gameMessages').text(`${store.currentPlayer === 'X' ? 'O' : 'X'} has won the game! Press New Game to keep being awesome.`)
     $('#gameMessages').fadeIn(4000)
     $('#board').hide()
-    $('#message').fadeOut(2000)
+    $('#message').fadeOut(8000)
     $('#getGames').show()
   }
 }

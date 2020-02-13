@@ -48,6 +48,7 @@ const onChangePasswordSuccess = function (response) {
   $('#message').text('Change Password Succeeded')
   $('#changePassword').trigger('reset')
   $('#getGamesMessage').hide()
+  $('message').show()
 }
 
 const onSignOutFailure = function (response) {
@@ -72,6 +73,7 @@ const onSignOutSuccess = function (response) {
 const onGetGamesResults = function (data) {
   $('#message').text(`You've played ${data.games.length} games.`)
   $('#getGames').show()
+  $('message').show()
 }
 
 const onWinGame = function (response) {
