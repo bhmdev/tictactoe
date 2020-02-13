@@ -14,7 +14,7 @@ const checkDraw = function () {
     $('#board').hide()
     $('#gameMessages').show('You have tied!')
     $('#getGames').show()
-    $('#message').show()
+    $('#message').fadeOut(2000)
   }
 }
 

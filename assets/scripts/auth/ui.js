@@ -6,7 +6,7 @@ const onSignUpSuccess = function (response) {
   $('#message').removeClass()
   $('#message').addClass('success-message')
   $('#signUp').hide()
-  $('#getGames').show()
+  $('#getGames').hide()
   $('#gameMessages').show()
 }
 
