@@ -10,7 +10,7 @@ const board = ['', '', '', '', '', '', '', '', '']
 
 const checkDraw = function () {
   if (store.draw) {
-    $('#gameMessages').text(`You have tied!! Press New Game to try again! `)
+    $('#gameMessages').text(`You have tied!! Press New Game to try again!`)
     $('#gameMessages').fadeIn(4000)
     $('#board').hide()
     $('#message').fadeOut(2000)
