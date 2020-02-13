@@ -10,11 +10,11 @@ const board = ['', '', '', '', '', '', '', '', '']
 
 const checkDraw = function () {
   if (store.draw) {
-    $('#gameMessages').text('You have tied!')
+    $('#gameMessages').text(`You have tied!! Press New Game to try again! `)
+    $('#gameMessages').fadeIn(4000)
     $('#board').hide()
-    $('#gameMessages').show('You have tied!')
-    $('#getGames').show()
     $('#message').fadeOut(2000)
+    $('#getGames').show()
   }
 }
 
@@ -106,7 +106,6 @@ const onWinGame = function () {
     $('#board').hide()
     $('#message').fadeOut(2000)
     $('#getGames').show()
-    // this is to test
   }
 }
 // you could also use $('this') in place of event.target
