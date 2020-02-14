@@ -9,6 +9,7 @@ const onNewGameSuccess = function (response) {
   $('#getGames').show()
   $('#message').show()
   $('#getGamesMessage').hide()
+  $('#changePassword').show()
 }
 
 const onNewGameFailure = function (response) {

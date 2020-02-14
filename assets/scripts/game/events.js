@@ -17,6 +17,7 @@ const checkDraw = function () {
     $('#getGames').show()
     // $('#finalMessage').fadeIn(4000)
     $('#finalMessage').hide()
+    $('#changePassword').hide()
   }
 }
 
@@ -108,6 +109,7 @@ const onWinGame = function () {
     $('#board').hide()
     $('#message').fadeOut(1000)
     $('#getGames').show()
+    $('#changePassword').hide()
     // $('#finalMessage').fadeIn(4000)
     // $('#finalMessage').show()
   }
