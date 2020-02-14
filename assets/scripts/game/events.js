@@ -109,7 +109,7 @@ const onWinGame = function () {
     $('#message').fadeOut(1000)
     $('#getGames').show()
     // $('#finalMessage').fadeIn(4000)
-    $('#finalMessage').show()
+    // $('#finalMessage').show()
   }
 }
 // you could also use $('this') in place of event.target
