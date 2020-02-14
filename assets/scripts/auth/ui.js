@@ -28,7 +28,7 @@ const onSignInSuccess = function (response) {
   $('#signUp').hide()
   $('#gameMessages').text('Click the NEW GAME button to embark on a wild adventure')
   $('#onNewGame').show()
-  $('#getGames').show()
+  $('#getGames').hide()
   $('#gameMessages').show()
   $('#message').show()
   $('#getGamesMessage').show()
@@ -67,13 +67,15 @@ const onSignOutSuccess = function (response) {
   $('#getGames').hide()
   $('#gameMessages').hide()
   $('#getGamesMessage').hide()
+  $('#finalMessage').hide()
   store.user = null
 }
 
 const onGetGamesResults = function (data) {
-  $('#message').text(`You've played ${data.games.length} games.`)
-  $('#getGames').show()
-  $('message').show()
+  $('#finalMessage').show()
+  $('#finalMessage').text(`You've played ${data.games.length} games.`)
+  // $('#getGames').show()
+  $('#finalMessage').fadeOut(5000)
 }
 
 const onWinGame = function (response) {

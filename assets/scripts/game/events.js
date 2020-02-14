@@ -13,8 +13,10 @@ const checkDraw = function () {
     $('#gameMessages').text(`You have tied!! Press New Game to try again!`)
     $('#gameMessages').fadeIn(4000)
     $('#board').hide()
-    $('#message').fadeOut(8000)
+    $('#message').fadeOut(1000)
     $('#getGames').show()
+    // $('#finalMessage').fadeIn(4000)
+    $('#finalMessage').hide()
   }
 }
 
@@ -104,8 +106,10 @@ const onWinGame = function () {
     $('#gameMessages').text(`${store.currentPlayer === 'X' ? 'O' : 'X'} has won the game! Press New Game to keep being awesome.`)
     $('#gameMessages').fadeIn(4000)
     $('#board').hide()
-    $('#message').fadeOut(8000)
+    $('#message').fadeOut(1000)
     $('#getGames').show()
+    // $('#finalMessage').fadeIn(4000)
+    $('#finalMessage').show()
   }
 }
 // you could also use $('this') in place of event.target

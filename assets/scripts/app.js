@@ -21,4 +21,5 @@ $(() => {
   $('#onNewGame').hide()
   $('#getGames').on('click', authEvents.onGetGames)
   $('#getGames').hide()
+  $('#finalMessage').on('click')
 })
