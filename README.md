@@ -33,7 +33,7 @@ One of the 8 winner scenarios will just denote text at the bottom stating the pl
 As a user I want to be able to login as needed.
 As a user I would want to have the option to change my password as needed.
 As a user I want to be able to sign-out of my account so I can keep people away from my scores.
-As a user I want to be able to sign up with my email address to create a login/password format from the readings).
+As a user I want to be able to sign up with my email address to create a login/password format from the readings.
 
 **Game Play**
 
