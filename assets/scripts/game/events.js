@@ -18,6 +18,7 @@ const checkDraw = function () {
     // $('#finalMessage').fadeIn(4000)
     $('#finalMessage').hide()
     $('#changePassword').hide()
+    $('#message').reset()
   }
 }
 
@@ -110,8 +111,7 @@ const onWinGame = function () {
     $('#message').fadeOut(1000)
     $('#getGames').show()
     $('#changePassword').hide()
-    // $('#finalMessage').fadeIn(4000)
-    // $('#finalMessage').show()
+    $('#message').reset()
   }
 }
 // you could also use $('this') in place of event.target

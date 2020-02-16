@@ -57,10 +57,12 @@ const onSignOutFailure = function (response) {
   $('#message').text('Sign Out failed')
   $('#signUp').trigger('reset')
   $('#signIn').trigger('reset')
+  $('#onNewGameSuccess').trigger('reset')
 }
 
 const onSignOutSuccess = function (response) {
   $('#message').text('Sign Out Succeeded')
+  $('#message').show('Sign Out failed')
   $('#changePassword').hide()
   $('#signOut').hide()
   $('#signIn').show()
