@@ -18,7 +18,7 @@ On the top left corner of the page, there will be a button that changes color to
 
 In the top right corner there will be logout and reset buttons to allow a player to logout of their current game or give them the option to reset the game.
 
-Below the game board I will have a New game button to start a fresh game. Above that is where users will get their feedback (if they’ve stated a new game after reset, this will also “Welcome” the user upon login/stating a new game etc etc.
+Below the game board I will have a New game button to start a fresh game. Above that is where users will get their feedback if they’ve stated a new game after reset, this will also “Welcome” the user upon login/stating a new game etc etc.
 
 The stats screen will just denote the total wins and losses and ties for a user. This will be made with module or just boxes. The “reset” button on this page will reset the scores.
 
