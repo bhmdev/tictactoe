@@ -1,7 +1,8 @@
 **Tic Tac Toe**
 
 **Description**
-This application allows a person to play Tic Tac Toe.
+This Single Page Application(SPA) is a functional Tic Tac Toe game which allow the user to play an unlimited amount of games, track the amount of games played.
+
 
 **Important Links**
 
@@ -29,12 +30,12 @@ One of the 8 winner scenarios will just denote text at the bottom stating the pl
 **User Stories:(Broken down in two sections)**
 
 **Authentication**
-<ol>
+<li>
 <li>As a user I want to be able to login as needed.</li>
 <li>As a user I would want to have the option to change my password as needed.</li>
 <li>As a user I want to be able to sign-out of my account so I can keep people away from my scores.</li>
 <li>As a user I want to be able to sign up with my email address to create a login/password format from the readings.</li>
-</ol>
+</li>
 
 **Game Play**
 </li>
