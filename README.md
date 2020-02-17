@@ -30,6 +30,7 @@ One of the 8 winner scenarios will just denote text at the bottom stating the pl
 **User Stories:(Broken down in two sections)**
 
 **Authentication**
+
 </li>
 <li>As a user I want to be able to login as needed.</li>
 <li>As a user I would want to have the option to change my password as needed.</li>
@@ -38,6 +39,7 @@ One of the 8 winner scenarios will just denote text at the bottom stating the pl
 </li>
 
 **Game Play**
+
 </li>
 <li>As a user I would like to start and reset the game as needed.</li>
 <li>As a user I want to see who’s turn it is so that I can play the game properly.</li>
@@ -60,6 +62,7 @@ One of the 8 winner scenarios will just denote text at the bottom stating the pl
 <li>AJAX</li>
 <li>Git/GitHub</li>
 </li>
+
 
 **Unsolved Issues & Future Goals**
 
