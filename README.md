@@ -38,6 +38,7 @@ One of the 8 winner scenarios will just denote text at the bottom stating the pl
 <li>As a user I want to be able to sign up with my email address to create a login/password format from the readings.</li>
 </li>
 
+
 **Game Play**
 
 </li>
