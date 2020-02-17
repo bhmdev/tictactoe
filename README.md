@@ -30,7 +30,7 @@ One of the 8 winner scenarios will just denote text at the bottom stating the pl
 **User Stories:(Broken down in two sections)**
 
 **Authentication**
-<li>
+</li>
 <li>As a user I want to be able to login as needed.</li>
 <li>As a user I would want to have the option to change my password as needed.</li>
 <li>As a user I want to be able to sign-out of my account so I can keep people away from my scores.</li>
