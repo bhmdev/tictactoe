@@ -26,28 +26,30 @@ The change password screen will have the logout button in the top right again. A
 
 One of the 8 winner scenarios will just denote text at the bottom stating the player has won. There will be a button to logout and one to reset to the home screen.
 
-**User Stories:**
+**User Stories:(Broken down in two sections)**
 
 **Authentication**
-
-As a user I want to be able to login as needed.
-As a user I would want to have the option to change my password as needed.
-As a user I want to be able to sign-out of my account so I can keep people away from my scores.
-As a user I want to be able to sign up with my email address to create a login/password format from the readings.
+<ol>
+<li>As a user I want to be able to login as needed.</li>
+<li>As a user I would want to have the option to change my password as needed.</li>
+<li>As a user I want to be able to sign-out of my account so I can keep people away from my scores.</li>
+<li>As a user I want to be able to sign up with my email address to create a login/password format from the readings.</li>
+</ol>
 
 **Game Play**
-
-As a user I would like to start and reset the game as needed.
-As a user I want to see who’s turn it is so that I can play the game properly.
-As a user I do not want to be able to steal another users spot.
-As a user I would like to know if I’ve won or lost by some indicator.
-As a user I would like to have a simple tic tac toe game to play.
-As a user I want to be able to play another game right when one is finished.
-As a user once the game is over, I should not be able to keep playing.
+</li>
+<li>As a user I would like to start and reset the game as needed.</li>
+<li>As a user I want to see who’s turn it is so that I can play the game properly.</li>
+<li>As a user I do not want to be able to steal another users spot.</li>
+<li>As a user I would like to know if I’ve won or lost by some indicator.</li>
+<li>As a user I would like to have a simple tic tac toe game to play.</li>
+<li>As a user I want to be able to play another game right when one is finished.</li>
+<li>As a user once the game is over, I should not be able to keep playing.
+</ol>
 
 **Technologies Utilized**
 
-<ol>
+</li>
 <li>HTML5</li>
 <li>CSS3</li>
 <li>JavaScript (ES6)</li>
@@ -56,7 +58,7 @@ As a user once the game is over, I should not be able to keep playing.
 <li>jQuery</li>
 <li>AJAX</li>
 <li>Git/GitHub</li>
-</ol>
+</li>
 
 **Unsolved Issues & Future Goals**
 
