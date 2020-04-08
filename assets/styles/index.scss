@@ -1,5 +1,9 @@
 @import '~bootstrap/scss/bootstrap';
 
+body {
+  background-color: lightgrey;
+}
+
 
 .box {
   align-items: center;
@@ -14,6 +18,12 @@
   justify-content: center;
   padding: 20px;
   width: 200px;
+}
+
+@media (max-width: 425px) {
+  .box {
+    height: 120px;
+  }
 }
 
 .box:hover {
